@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getHello(number: any): number {
+  getResult(number: number): number {
     return Math.pow(number, 2);
   }
 }
