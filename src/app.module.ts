@@ -6,6 +6,7 @@ import { config } from 'dotenv';
 
 config();
 const url = new URL(process.env.DATABASE_URL);
+
 url.searchParams.delete('sslmode');
 
 @Module({
